@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Animations</title>
+
+        <!-- Fontslink -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&display=swap"   rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato&family=Poppins&display=swap" rel="stylesheet">
+        <!-- css -->
+        <link rel="stylesheet" href="css/style.css">
+        <!-- javascript -->
+        <script src="javascript/script.js"></script>
+    </head>
+
+    <body>
+        <!-- Message to start game -->
+        <div id="message1" class="message">
+            <h1> Feed The Bunny</h1>
+            <p> Feed as many bunnies as you can in 20 seconds</p>
+            <button id="btn1" class="btn">Start Game</button>
+        </div>
+        <!-- Message end game -->
+        <div id="message2" class="message" >
+            <h1>Time's Up</h1>
+            <p> You fed <span id="counts"></span> bunnies today</p>
+            <button id="btn2" class="btn">Play Again</button>
+        </div>
+        
+        <!-- counter-->
+        <div id="counter">
+            <p> Bunnies Fed: <span id="counterShow">0</span></p>
+        </div>
+
+        <!-- clouds -->
+        <div class="clouds">
+            <div class="cloud cloudset1 cloud1"></div>
+            <div class="cloud cloudset1 cloud2"></div>
+            <div class="cloud cloudset1 cloud3"></div>
+            <div class="cloud cloudset1 cloud4"></div>
+            <div class="cloud cloudset1 cloud5"></div>
+            <div class="cloud cloudset1 cloud6"></div>
+            <div class="cloud cloudset1 cloud7"></div>
+            <div class="cloud cloudset1 cloud8"></div>
+        </div>
+
+        <div class="clouds">
+            <div class="cloud cloudset2 cloud2"></div>
+            <div class="cloud cloudset2 cloud5"></div>
+            <div class="cloud cloudset2 cloud7"></div>
+            <div class="cloud cloudset2 cloud3"></div>
+            <div class="cloud cloudset2 cloud1"></div>
+            <div class="cloud cloudset1 cloud6"></div>
+            <div class="cloud cloudset1 cloud8"></div>
+            <div class="cloud cloudset1 cloud4"></div>
+        </div>
+        <!-- trees -->
+        <div class="treeset1">
+            <div class="roundtrees">
+                <div class="roundtree roundtree1">
+                    <div class="root"></div>
+                    <div class="stem"></div>
+                </div>
+
+                <div class="roundtree roundtree2">
+                    <div class="root"></div>
+                    <div class="stem"></div>
+                </div>
+
+                <div class="roundtree roundtree1">
+                    <div class="root"></div>
+                    <div class="stem"></div>
+                </div>
+
+                <div class="roundtree roundtree2">
+                    <div class="root"></div>
+                    <div class="stem"></div>
+                </div>
+            </div>
+
+            <div class="roundtrees">
+                <div class="roundtree roundtree1">
+                    <div class="root"></div>
+                    <div class="stem"></div>
+                </div>
+
+                <div class="roundtree roundtree2">
+                    <div class="root"></div>
+                    <div class="stem"></div>
+                </div>
+
+                <div class="roundtree roundtree1">
+                    <div class="root"></div>
+                    <div class="stem"></div>
+                </div>
+
+                <div class="roundtree roundtree2">
+                    <div class="root"></div>
+                    <div class="stem"></div>
+                </div>
+            </div>
+        </div>  
+
+        <div class="treeset2"> 
+            <div class="flowertrees">
+                <div class="flowertree flowertree1">
+                    <div class="root"></div>
+                    <div class="stem1"></div>
+                    <div class="stem2"></div>
+                    <div class="stem3"></div>
+                </div>
+                <div class="flowertree flowertree2">
+                    <div class="root"></div>
+                    <div class="stem1"></div>
+                    <div class="stem2"></div>
+                    <div class="stem3"></div>
+                </div>
+                <div class="flowertree flowertree1">
+                    <div class="root"></div>
+                    <div class="stem1"></div>
+                    <div class="stem2"></div>
+                    <div class="stem3"></div>
+                </div>
+                
+            </div>
+        </div>
+        <!-- rabbit -->
+        <div id="rabbits">
+        </div>
+        <!-- bushes -->
+        <div id="bushes">
+            <div class="base">
+                <div class = "bush-group">
+                    <div class = "bush"></div>
+                    <div class = "bush"></div>
+                    <div class = "bush"></div>
+                    <div class = "bush"></div>
+                    <div class = "bush"></div>
+                    <div class = "bush"></div>
+                    <div class = "bush"></div>
+                    <div class = "bush"></div>
+                    <div class = "bush"></div>
+                </div>
+            </div>
+            <div class="base">
+                <div class = "bush-group">
+                    <div class = "bush"></div>
+                    <div class = "bush"></div>
+                    <div class = "bush"></div>
+                    <div class = "bush"></div>
+                    <div class = "bush"></div>
+                    <div class = "bush"></div>
+                    <div class = "bush"></div>
+                    <div class = "bush"></div>
+                    <div class = "bush"></div>
+                </div>
+            </div>
+        </div>  
+        
+        <!-- carrot eating audio -->
+        <audio id="myAudio">
+            <source src="media/carrot.mp3" type="audio/mp3">
+        </audio>
+        <!-- back audio -->
+        <!--  //game background Audio source
+        Wallpaper by Kevin MacLeod | https://incompetech.com/
+        Music promoted by https://www.chosic.com/free-music/all/
+        Creative Commons CC BY 3.0
+        https://creativecommons.org/licenses/by/3.0/-->
+        <audio id="backAudio">
+            <source src="media/background.mp3" type="audio/mp3">
+        </audio>    
+    </body>
+</html>
+
+
