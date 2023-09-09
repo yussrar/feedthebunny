@@ -433,11 +433,30 @@ body {
 }
 
 
+/* 
+@media screen and (max-width: 1050px) {
 
 
+  #main-cont {
+    align-items: center;
+    width: 65%; 
+    height: 100%; 
+    
+  }
+
+}
+
+@media screen and (max-width: 750px) {
 
 
+  #main-cont {
+    align-items: center;
+    width: 45%; 
+    height: 90%;
+    
+  }
 
+}
 
 @media screen and (max-width: 500px) {
 
@@ -445,8 +464,24 @@ body {
   #main-cont {
     
     margin: 0;
-    width: 100%; /* Set a percentage width */
-    height: 50%; /* Set a percentage height */
+    width: 100%; 
+    height: 100%; 
+    
+  }
+
+  .message{
+    width: 30vh;
+  }
+}
+
+@media screen and (max-width: 350px) {
+
+
+  #main-cont {
+    
+    margin: 0;
+    width: 100%; 
+    height: 0%; 
     
     
   }
@@ -455,6 +490,6 @@ body {
     width: 40vh;
   }
 }
-
+ */
 
 
