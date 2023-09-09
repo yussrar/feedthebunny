@@ -1,10 +1,17 @@
 
 body {
-  background: #cbe9f4; 
+  background: #8a8d8e; 
   margin: 0;
   width:1500px;
   overflow: hidden;
   cursor:url(../media/cursor.cur),auto;
+}
+
+#main-cont {
+  border: 2px dotted #9d5d5d;
+  overflow: hidden;
+  margin: 1em;
+  background: #cbe9f4; 
 }
 
 /*clouds*/
@@ -338,17 +345,19 @@ body {
 
 /*rabbit*/ 
 /*rabbit image source : https://www.freepik.com/free-vector/expression-emotion-concept-set-rabbit-character-diffetent-animal-emotions_18779011.htm#query=bunny%20rabbitexpression-emotion-concept-set-rabbit-character-diffetent-animal-emotions%20zip&position=0&from_view=search&track=ais*/ 
-
+#rabbits{
+    max-width: 90%;
+}
 .rabbit{
   z-index:3;
   position: absolute;
-  height:100px;
-  width: 100px;
-  background-image: url("../media/bunny.png");
+  height:140px;
+  width: 140px;
+  background-image: url("../media/bun3.png");
   background-size: contain;
   background-repeat: no-repeat;
   text-align: center;
-  animation: rabbitMove 4s ease-in-out;
+  animation: rabbitMove 1.5s ease-in-out;
 } 
 
 
@@ -356,29 +365,31 @@ body {
   0% {
     transform: translate(0, 0);
   }
-  25% {
+  /* 25% {
     transform: translate(0, -50%);
-  }
+  } */
   50% {
     transform: translate(0, -200%);
   }
-  75% {
+  /* 75% {
     transform: translate(0, -50%);
-  }
+  } */
   100% {
     transform: translate(0, 0);
   }
 }
 
+
+
 /*message for start game andn end game*/ 
 
 .message{
-  position: absolute;
   z-index: 4;
+  position : absolute;
   background-color: whitesmoke;
-  border:2px dotted #9d5d5d;
-  margin-left:500px;
-  padding:2em;
+  border: 2px dotted #9d5d5d;
+  padding: 2em;
+  margin-left:5em;
   font-family: 'Montserrat', sans-serif;
   text-align: center;
   animation: slide-down 1s ease forwards;
@@ -407,12 +418,7 @@ body {
   color:white;
 }
 
-#message2{
-  margin-left:600px;
-  padding:2em;
-  padding-left: 2em;
-  padding-right: 2em;
-}
+
 
 #counter {
   position: absolute;
@@ -428,8 +434,63 @@ body {
 
 
 
+@media screen and (max-width: 1050px) {
 
 
+  #main-cont {
+    align-items: center;
+    width: 65%; /* Set a percentage width */
+    height: 100%; /* Set a percentage height */
+    
+  }
+
+}
+
+@media screen and (max-width: 750px) {
+
+
+  #main-cont {
+    align-items: center;
+    width: 45%; /* Set a percentage width */
+    height: 90%; /* Set a percentage height */
+    
+  }
+
+}
+
+/* Media query for screens with a maximum width of 500px */
+@media screen and (max-width: 500px) {
+
+
+  #main-cont {
+    
+    margin: 0;
+    width: 66vh; /* Set a percentage width */
+    height: 100%; /* Set a percentage height */
+    
+  }
+
+  .message{
+    width: 30vh;
+  }
+}
+
+@media screen and (max-width: 350px) {
+
+
+  #main-cont {
+    
+    margin: 0;
+    width: 50vh; /* Set a percentage width */
+    height: 100%; /* Set a percentage height */
+    
+    
+  }
+
+  .message{
+    width: 40vh;
+  }
+}
 
 
 
