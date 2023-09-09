@@ -475,22 +475,7 @@ body {
   }
 }
 
-@media screen and (max-width: 350px) {
 
-
-  #main-cont {
-    
-    margin: 0;
-    width: 50vh; /* Set a percentage width */
-    height: 100%; /* Set a percentage height */
-    
-    
-  }
-
-  .message{
-    width: 40vh;
-  }
-}
 
 
 

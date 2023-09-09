@@ -67,6 +67,11 @@ window.onload = function () {
 
       // Add a click event listener to the newly created rabbit element
       rabbit.addEventListener("click", () => rabbitFed(rabbit));
+
+      rabbit.addEventListener("touchstart", (event) => {
+        event.preventDefault(); // Prevent default touch behavior (e.g., zooming)
+        rabbitFed(rabbit);
+      });
     }
 
 
